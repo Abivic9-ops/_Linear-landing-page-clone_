@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="antialiased" style={{ backgroundColor: 'var(--color-background)', color: 'var(--color-text-primary)', fontFamily: 'var(--font-sans)' }}>
+      <body className="min-h-screen bg-[var(--color-background)] font-[family-name:var(--font-sans)] text-[var(--color-text-primary)] antialiased">
         {children}
       </body>
     </html>
