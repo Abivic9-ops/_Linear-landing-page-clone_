@@ -60,8 +60,11 @@ export function Navbar() {
       </nav>
 
       {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="border-t border-[var(--color-border)] bg-[var(--color-background)] px-5 pb-5 pt-4 md:hidden">
+      <div
+        className={`border-t border-[var(--color-border)] bg-[var(--color-background)] px-5 pb-5 pt-4 transition-all duration-200 md:hidden ${
+          mobileOpen ? 'block' : 'hidden'
+        }`}
+      >
           <nav className="flex flex-col gap-3">
             {NAV_ITEMS.map((item) => (
               <a
@@ -81,7 +84,6 @@ export function Navbar() {
             <Button className="w-full">Sign up</Button>
           </div>
         </div>
-      )}
     </header>
   )
 }

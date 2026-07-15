@@ -36,11 +36,11 @@ export function FeatureTriad() {
           </h2>
         </div>
 
-        <div className="mx-auto mt-14 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-10 grid max-w-5xl gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:mt-14">
           {FEATURES.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="card-panel group p-7 transition-colors hover:border-[var(--color-accent)]/30"
+              className="card-panel group p-5 transition-colors hover:border-[var(--color-accent)]/30 sm:p-7"
             >
               <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-surface-raised)] text-[var(--color-accent)] transition-colors group-hover:bg-[var(--color-accent)] group-hover:text-white">
                 <Icon className="h-5 w-5" />

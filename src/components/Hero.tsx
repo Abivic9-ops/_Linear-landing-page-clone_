@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from 'lucide-react'
 
 export function Hero() {
   return (
-    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24">
+    <section className="relative overflow-hidden pt-28 pb-12 sm:pt-32 md:pt-40 md:pb-16 lg:pb-24">
       {/* Subtle radial glow */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-1/2 top-0 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-[var(--color-accent)] opacity-[0.07] blur-[120px]" />

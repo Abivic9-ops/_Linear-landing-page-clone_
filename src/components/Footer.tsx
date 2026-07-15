@@ -3,9 +3,9 @@ import { FOOTER_SECTIONS } from '@/lib/constants'
 
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--color-border)] py-14">
+    <footer className="border-t border-[var(--color-border)] py-10 sm:py-14">
       <SectionContainer>
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-5">
           {/* Brand column */}
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center gap-2 text-[var(--color-text-primary)]">

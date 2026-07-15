@@ -12,7 +12,7 @@ export function Testimonials() {
           <h2 className="section-headline mt-4">Loved by product teams</h2>
         </div>
 
-        <div className="mx-auto mt-14 grid max-w-6xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-10 grid max-w-6xl gap-4 sm:grid-cols-2 sm:gap-5 sm:mt-14 lg:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <div
               key={t.name}

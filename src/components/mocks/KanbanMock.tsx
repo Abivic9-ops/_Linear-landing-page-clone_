@@ -39,7 +39,7 @@ export function KanbanMock() {
       </div>
       <div className="flex gap-3 overflow-x-auto p-4">
         {COLUMNS.map((col) => (
-          <div key={col.title} className="min-w-[180px] flex-1">
+          <div key={col.title} className="min-w-[200px] flex-1 sm:min-w-[180px]">
             <div className="mb-3 flex items-center justify-between text-xs font-medium text-[var(--color-text-muted)]">
               <span>{col.title}</span>
               <span className="flex h-4 w-4 items-center justify-center rounded-full bg-[var(--color-surface-raised)] text-[0.5rem]">

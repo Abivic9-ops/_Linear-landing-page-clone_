@@ -47,7 +47,7 @@ export function DiffMock() {
         </div>
       </div>
       <div className="overflow-x-auto">
-        <table className="w-full font-mono text-[0.6rem]">
+        <table className="w-full min-w-[450px] font-mono text-[0.6rem]">
           <tbody>
             {DIFF_LINES.map((line, i) => (
               <tr key={i} className={TYPE_STYLES[line.type as keyof typeof TYPE_STYLES]}>

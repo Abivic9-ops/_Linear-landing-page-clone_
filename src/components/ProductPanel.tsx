@@ -57,7 +57,7 @@ export function ProductPanel() {
 
         {/* Issue List */}
         <div className="flex flex-1 flex-col">
-          <div className="flex items-center justify-between border-b border-[var(--color-border)] px-4 py-3">
+          <div className="flex items-center justify-between border-b border-[var(--color-border)] px-3 py-3 sm:px-4">
             <h3 className="text-sm font-semibold text-[var(--color-text-primary)]">My Issues</h3>
             <button className="btn-primary !px-2.5 !py-1.5 !text-[0.625rem]">
               <Plus className="h-3 w-3" />

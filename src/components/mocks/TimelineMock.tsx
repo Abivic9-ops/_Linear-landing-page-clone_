@@ -17,9 +17,9 @@ export function TimelineMock() {
         <span className="text-sm font-semibold text-[var(--color-text-primary)]">Roadmap</span>
         <span className="text-[0.625rem] text-[var(--color-text-muted)]">Q1 – Q3 2026</span>
       </div>
-      <div className="p-4">
+      <div className="overflow-x-auto p-4">
         {/* Month headers */}
-        <div className="mb-3 flex pl-[120px]">
+        <div className="mb-3 flex min-w-[500px] pl-[100px] sm:pl-[120px]">
           {MONTHS.map((m) => (
             <div key={m} className="flex-1 text-center text-[0.5rem] text-[var(--color-text-muted)]">
               {m}
@@ -27,10 +27,10 @@ export function TimelineMock() {
           ))}
         </div>
         {/* Rows */}
-        <div className="space-y-2.5">
+        <div className="min-w-[500px] space-y-2.5">
           {TIMELINE_ITEMS.map((item) => (
             <div key={item.label} className="flex items-center">
-              <div className="w-[120px] shrink-0 truncate pr-3 text-right text-[0.625rem] font-medium text-[var(--color-text-muted)]">
+              <div className="w-[100px] shrink-0 truncate pr-3 text-right text-[0.625rem] font-medium text-[var(--color-text-muted)] sm:w-[120px]">
                 {item.label}
               </div>
               <div className="relative flex-1">

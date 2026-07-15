@@ -11,24 +11,24 @@ export function NarrativeSection({
   reverse = false,
 }: NarrativeSectionProps) {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-12 sm:py-16 md:py-24">
       <SectionContainer>
         <div
-          className={`flex flex-col items-center gap-12 lg:flex-row ${
+          className={`flex flex-col items-center gap-10 sm:gap-12 lg:flex-row ${
             reverse ? 'lg:flex-row-reverse' : ''
           }`}
         >
           {/* Text */}
-          <div className="flex-1 text-center lg:text-left">
+          <div className="w-full flex-1 text-center lg:text-left">
             <EyebrowLabel>{eyebrow}</EyebrowLabel>
-            <h2 className="section-headline mt-4">{headline}</h2>
-            <p className="muted-body mx-auto mt-4 max-w-md lg:mx-0">
+            <h2 className="section-headline mt-3 sm:mt-4">{headline}</h2>
+            <p className="muted-body mx-auto mt-3 max-w-md sm:mt-4 lg:mx-0">
               {description}
             </p>
           </div>
 
           {/* Mock UI */}
-          <div className="w-full flex-1">{mockUI}</div>
+          <div className="w-full flex-1 overflow-hidden">{mockUI}</div>
         </div>
       </SectionContainer>
     </section>

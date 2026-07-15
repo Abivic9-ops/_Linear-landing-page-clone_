@@ -47,7 +47,7 @@ export function Changelog() {
         <div className="mt-10 text-center">
           <a
             href="#"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] transition-colors hover:text-[var(--color-accent-hover)]"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] transition-colors hover:text-[var(--color-accent-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
           >
             View all updates
             <ArrowRight className="h-3.5 w-3.5" />
