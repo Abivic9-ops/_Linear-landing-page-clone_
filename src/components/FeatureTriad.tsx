@@ -1,55 +1,31 @@
 import { SectionContainer } from './SectionContainer'
 import { EyebrowLabel } from './EyebrowLabel'
-import { Zap, Workflow, BarChart3 } from 'lucide-react'
-
-const FEATURES = [
-  {
-    icon: Zap,
-    title: 'Built for speed',
-    description:
-      'A keyboard-first interface designed for developers. Navigate, create, and update issues without lifting your hands from the keyboard.',
-  },
-  {
-    icon: Workflow,
-    title: 'AI-powered workflow',
-    description:
-      'Automate triage, spec writing, and pull requests with AI agents that learn your team\'s patterns and conventions.',
-  },
-  {
-    icon: BarChart3,
-    title: 'Real-time visibility',
-    description:
-      'Live dashboards, project health scores, and automated status updates so leadership always knows where things stand.',
-  },
-]
+import { FEATURE_ITEMS } from '@/lib/constants'
 
 export function FeatureTriad() {
   return (
     <section className="py-20 md:py-28">
       <SectionContainer>
-        <div className="mx-auto max-w-2xl text-center">
-          <EyebrowLabel accent>Why Linear</EyebrowLabel>
-          <h2 className="section-headline mt-4">
-            Everything your team needs,
-            <br className="hidden sm:block" />
-            nothing it doesn&apos;t
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="section-headline">
+            A new species of product tool.
           </h2>
+          <p className="muted-body mx-auto mt-5 max-w-2xl">
+            Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products.
+          </p>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-5xl gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:mt-14">
-          {FEATURES.map(({ icon: Icon, title, description }) => (
-            <div
-              key={title}
-              className="card-panel group p-5 transition-colors hover:border-[var(--color-accent)]/30 sm:p-7"
-            >
-              <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--color-surface-raised)] text-[var(--color-accent)] transition-colors group-hover:bg-[var(--color-accent)] group-hover:text-white">
-                <Icon className="h-5 w-5" />
-              </div>
-              <h3 className="mb-2 text-base font-semibold text-[var(--color-text-primary)]">
-                {title}
+        <div className="mx-auto mt-14 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {FEATURE_ITEMS.map((item) => (
+            <div key={item.figure} className="text-left">
+              <span className="mb-3 inline-block text-xs font-medium tracking-wider text-[var(--color-accent)]">
+                FIG {item.figure}
+              </span>
+              <h3 className="mb-2 text-lg font-semibold text-[var(--color-text-primary)]">
+                {item.title}
               </h3>
               <p className="text-sm leading-relaxed text-[var(--color-text-muted)]">
-                {description}
+                {item.description}
               </p>
             </div>
           ))}

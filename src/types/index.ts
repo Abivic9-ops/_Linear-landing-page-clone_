@@ -12,6 +12,7 @@ export interface ChangelogEntry {
   date: string
   title: string
   description: string
+  href: string
 }
 
 export interface Testimonial {
@@ -19,7 +20,12 @@ export interface Testimonial {
   name: string
   title: string
   company: string
-  initials: string
+}
+
+export interface FeatureItem {
+  figure: string
+  title: string
+  description: string
 }
 
 export interface NarrativeSectionProps {
@@ -27,6 +33,7 @@ export interface NarrativeSectionProps {
   eyebrow: string
   headline: string
   description: string
+  subFeatures?: string[]
   mockUI: React.ReactNode
   reverse?: boolean
 }

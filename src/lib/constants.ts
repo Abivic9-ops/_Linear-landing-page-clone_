@@ -1,4 +1,10 @@
-import type { NavItem, FooterSection, ChangelogEntry, Testimonial } from '@/types'
+import type {
+  NavItem,
+  FooterSection,
+  ChangelogEntry,
+  Testimonial,
+  FeatureItem,
+} from '@/types'
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Product', href: '#' },
@@ -14,33 +20,60 @@ export const FOOTER_SECTIONS: FooterSection[] = [
   {
     heading: 'Product',
     links: [
-      { label: 'Issues', href: '#' },
-      { label: 'Cycles', href: '#' },
-      { label: 'Projects', href: '#' },
-      { label: 'Views', href: '#' },
-      { label: 'Roadmaps', href: '#' },
-      { label: 'Integrations', href: '#' },
+      { label: 'Intake', href: '#' },
+      { label: 'Plan', href: '#' },
+      { label: 'Build', href: '#' },
+      { label: 'Diffs', href: '#' },
+      { label: 'Monitor', href: '#' },
+      { label: 'Pricing', href: '#' },
       { label: 'Security', href: '#' },
+    ],
+  },
+  {
+    heading: 'Features',
+    links: [
+      { label: 'Asks', href: '#' },
+      { label: 'Agents', href: '#' },
+      { label: 'Coding Sessions', href: '#' },
+      { label: 'Customer Requests', href: '#' },
+      { label: 'Insights', href: '#' },
+      { label: 'Mobile', href: '#' },
+      { label: 'Integrations', href: '#' },
+      { label: 'Changelog', href: '#' },
     ],
   },
   {
     heading: 'Company',
     links: [
       { label: 'About', href: '#' },
-      { label: 'Blog', href: '#' },
       { label: 'Customers', href: '#' },
       { label: 'Careers', href: '#' },
+      { label: 'Blog', href: '#' },
+      { label: 'Method', href: '#' },
+      { label: 'Quality', href: '#' },
       { label: 'Brand', href: '#' },
     ],
   },
   {
     heading: 'Resources',
     links: [
-      { label: 'Method', href: '#' },
-      { label: 'Quality', href: '#' },
+      { label: 'Switch', href: '#' },
+      { label: 'Download', href: '#' },
       { label: 'Documentation', href: '#' },
-      { label: 'API', href: '#' },
-      { label: 'Changelog', href: '#' },
+      { label: 'Developers', href: '#' },
+      { label: 'Status', href: '#' },
+      { label: 'Enterprise', href: '#' },
+      { label: 'Startups', href: '#' },
+    ],
+  },
+  {
+    heading: 'Connect',
+    links: [
+      { label: 'Contact us', href: '#' },
+      { label: 'Community', href: '#' },
+      { label: 'X (Twitter)', href: '#' },
+      { label: 'GitHub', href: '#' },
+      { label: 'YouTube', href: '#' },
     ],
   },
   {
@@ -50,128 +83,130 @@ export const FOOTER_SECTIONS: FooterSection[] = [
       { label: 'Terms', href: '#' },
       { label: 'DPA', href: '#' },
       { label: 'AUP', href: '#' },
-      { label: 'Sub-processors', href: '#' },
     ],
+  },
+]
+
+export const FEATURE_ITEMS: FeatureItem[] = [
+  {
+    figure: '0.2',
+    title: 'Built for purpose',
+    description:
+      'Linear is shaped by the practices and principles of world-class product teams.',
+  },
+  {
+    figure: '0.3',
+    title: 'Powered by AI agents',
+    description:
+      'Designed for workflows shared by humans and agents. From drafting PRDs to pushing PRs.',
+  },
+  {
+    figure: '0.4',
+    title: 'Designed for speed',
+    description:
+      'Reduces noise and restores momentum to help teams ship with high velocity and focus.',
   },
 ]
 
 export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
   {
-    date: 'Jul 2026',
-    title: 'AI agents in GA',
+    date: 'Jun 30, 2026',
+    title: 'Initiative properties',
     description:
-      "Linear's AI agents are now available to all teams on Pro and Enterprise plans. Automate issue triage, spec drafting, and pull request creation.",
+      'Initiatives define your company\'s high-level goals and organize the projects that contribute to them. To help you manage initiatives as your roadmap grows, we\'ve added a new set of focused initiative properties.',
+    href: '#',
   },
   {
-    date: 'Jun 2026',
-    title: 'Linear Asks redesign',
+    date: 'Jun 17, 2026',
+    title: 'Agent assisted project updates',
     description:
-      'Redesigned intake workflow with smarter triage and routing. Capture requests from Slack, email, and customer conversations automatically.',
+      'Project and initiative updates keep teams aligned, but writing them means pulling out recent changes from issues, documents, and discussions.',
+    href: '#',
   },
   {
-    date: 'May 2026',
-    title: 'Timeline view',
+    date: 'Jun 10, 2026',
+    title: 'Coding sessions in Linear',
     description:
-      'A new Gantt-style timeline view for Projects and Roadmaps. Drag and drop to reschedule milestones and see team capacity at a glance.',
+      'Earlier this year, we launched Linear Agent, giving teams a new way to plan and coordinate their issues and projects. Since then, we\'ve added Code Intelligence to extend that understanding to the codebase, and MCP support to bring all of your context together.',
+    href: '#',
   },
   {
-    date: 'Apr 2026',
-    title: 'Diffs in issues',
+    date: 'Jun 3, 2026',
+    title: 'Team documents',
     description:
-      'See the exact code changes your agents made, directly inside any issue. Review, comment, and approve without leaving Linear.',
+      'Important team context doesn\'t always belong in a specific issue, project, or initiative. Teams also need a dedicated place for the notes, docs, and shared references that support their work over time.',
+    href: '#',
   },
 ]
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "Linear has fundamentally changed how our engineering team operates. The issue tracker finally feels like it was built by engineers, for engineers. Velocity is up 30% since we switched.",
-    name: 'Priya Anand',
-    title: 'VP of Engineering',
-    company: 'Meridian Finance',
-    initials: 'PA',
+      "You'll probably build a better product, just because of the craft that using Linear infuses on your brain.",
+    name: 'Gabriel Peal',
+    title: 'Staff Software Engineer',
+    company: 'OpenAI',
   },
   {
     quote:
-      "We evaluated every tool on the market. Linear was the only one that didn't feel like a project management tool pretending to be a developer tool. It's the real deal.",
-    name: 'James Okafor',
-    title: 'CTO',
-    company: 'Healthbridge',
-    initials: 'JO',
+      'Our speed is intense and Linear helps us be action biased.',
+    name: 'Nik Koblov',
+    title: 'Head of Engineering',
+    company: 'Ramp',
   },
   {
     quote:
-      "The AI agents are genuinely useful — not in a gimmicky way. They handle the boring parts of shipping so our team can focus on what actually matters.",
-    name: 'Sofia Larsen',
-    title: 'Head of Product',
-    company: 'Stackr',
-    initials: 'SL',
-  },
-  {
-    quote:
-      "Our entire agency runs on Linear. From client intake to QA handoff, every step lives in one place. The speed of the interface alone makes it worth it.",
-    name: 'Marcus Webb',
-    title: 'Co-founder',
-    company: 'Neon Studio',
-    initials: 'MW',
-  },
-  {
-    quote:
-      "I used to dread Monday standups because nobody knew the status of anything. With Linear, every stakeholder has the context they need without asking a single question.",
-    name: 'Anika Sharma',
-    title: 'Engineering Manager',
-    company: 'CartPulse',
-    initials: 'AS',
-  },
-  {
-    quote:
-      "The keyboard shortcuts, the speed, the design — it's everything Jira isn't. Our engineers complained about every tool we've ever used. Nobody complains about Linear.",
-    name: 'Daniel Park',
-    title: 'Director of Engineering',
-    company: 'DevFlow',
-    initials: 'DP',
+      'Linear is excellent, just excellent. It has the right opinions for fast moving teams.',
+    name: 'Kaz Nejatian',
+    title: '',
+    company: 'Opendoor',
   },
 ]
 
 export const NARRATIVE_SECTIONS = [
   {
     step: '1.0',
-    eyebrow: 'Intake →',
-    headline: 'Turn conversations into issues — automatically',
+    eyebrow: 'Intake\u2192',
+    headline: 'Make product operations self-driving',
     description:
-      'Capture feedback from Slack, Linear Asks, and customer conversations. Let AI triage, label, and route issues to the right team before a human even sees them.',
+      'Turn conversations and customer feedback into actionable issues that are routed, labeled, and prioritized for the right team.',
+    subFeatures: ['Linear Agent', 'Triage', 'Customer Requests', 'Linear Asks'],
     reverse: false,
   },
   {
     step: '2.0',
-    eyebrow: 'Plan →',
-    headline: 'Align the team around a single source of truth',
+    eyebrow: 'Plan\u2192',
+    headline: 'Define the product direction',
     description:
-      'Create project roadmaps, write specs with AI, and break down initiatives into cycles. Everyone knows what\'s being built and why.',
+      'Plan and navigate from idea to launch. Align your team with product initiatives, strategic roadmaps, and clear, up-to-date PRDs.',
+    subFeatures: ['Projects', 'Documents', 'Initiatives', 'Visual planning'],
     reverse: true,
   },
   {
     step: '3.0',
-    eyebrow: 'Build →',
-    headline: 'AI agents that work alongside your team',
+    eyebrow: 'Build\u2192',
+    headline: 'Move work forward across teams and agents',
     description:
-      "Linear's AI agents draft specs, write code, open pull requests, and update issues — so your engineers can focus on the hard problems.",
+      'Build and deploy AI agents that work alongside your team. Work on complex tasks together or delegate entire issues end-to-end.',
+    subFeatures: ['Issues', 'Agents', 'Linear MCP', 'Git automations', 'Cycles'],
     reverse: false,
   },
   {
     step: '4.0',
-    eyebrow: 'Diffs →',
-    headline: 'Review what your agents built — with full context',
+    eyebrow: 'Diffs\u2192',
+    headline: 'Review PRs and agent output',
     description:
-      'See the exact changes your AI agents made. Review diffs inline, leave comments, and approve or request changes — all without leaving Linear.',
+      'Understand code changes at a glance with structural diffs for human and agent output. Review, discuss, and merge all within Linear.',
+    subFeatures: [],
     reverse: true,
   },
   {
     step: '5.0',
-    eyebrow: 'Monitor →',
-    headline: 'Understand progress without asking for updates',
+    eyebrow: 'Monitor\u2192',
+    headline: 'Understand progress at scale',
     description:
-      'Automatic updates, real-time analytics, and AI-generated project summaries. Leadership always knows where things stand.',
+      'Take the guesswork out of product development with project updates, analytics, and dashboards that surface what needs your attention.',
+    subFeatures: ['Pulse', 'Insights', 'Dashboards'],
     reverse: false,
   },
 ]

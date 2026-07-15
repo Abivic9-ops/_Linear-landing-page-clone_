@@ -5,8 +5,7 @@ export function Footer() {
   return (
     <footer className="border-t border-[var(--color-border)] py-10 sm:py-14">
       <SectionContainer>
-        <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-5">
-          {/* Brand column */}
+        <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-6">
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center gap-2 text-[var(--color-text-primary)]">
               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
@@ -15,11 +14,10 @@ export function Footer() {
               <span className="text-sm font-semibold tracking-tight">Linear</span>
             </a>
             <p className="mt-4 text-xs leading-relaxed text-[var(--color-text-muted)]">
-              The issue tracker built for modern product teams.
+              The system for product development.
             </p>
           </div>
 
-          {/* Link columns */}
           {FOOTER_SECTIONS.map((section) => (
             <div key={section.heading}>
               <h4 className="footer-heading">{section.heading}</h4>
@@ -37,11 +35,12 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[var(--color-border)] pt-8 text-[0.75rem] text-[var(--color-text-muted)] sm:flex-row">
-          <span>&copy; {new Date().getFullYear()} Linear, Inc.</span>
+          <span>Linear. The system for product development.</span>
           <div className="flex gap-5">
             <a href="#" className="footer-link">Privacy</a>
             <a href="#" className="footer-link">Terms</a>
-            <a href="#" className="footer-link">Status</a>
+            <a href="#" className="footer-link">DPA</a>
+            <a href="#" className="footer-link">AUP</a>
           </div>
         </div>
       </SectionContainer>
